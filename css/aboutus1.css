@@ -1,0 +1,123 @@
+*{
+    margin:0px ;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Roboto',sans-serif;
+}
+body{
+    background-color: grey;
+}
+
+.heading{
+    position: relative;
+    top: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading h1{
+    font-size: 50px;
+    color:green;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after{
+    content: "";
+    position:  absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.heading p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 35px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 1s ease;
+}
+
+.about-image:hover img{
+    transform: scale(1.2);
+}
+
+
+.about-content{
+    flex:1;
+}
+
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: rgb(19, 16, 16);
+}
+
+.about-content p{
+    font-size: 18px;
+    line-height:  1.5;
+    color: black;
+}
+
+
+
+.about-content .read-more:hover{
+    background-color: chartreuse;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+}
+.nav-bar  a{
+    float: left;
+    padding: 10px;
+    margin:10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.7s ease-out;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-bar a:hover,
+.nav-bar a.active{
+    color: blue;
+}
+
+#aboutus{
+    color: blue;
+}
